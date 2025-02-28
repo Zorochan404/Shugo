@@ -10,6 +10,7 @@
     "@langchain/core": "^0.3.40",
     "@langchain/google-genai": "^0.1.8",
     "@langchain/openai": "^0.4.4",
+    "axios": "^1.7.9",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -19,6 +20,10 @@
     "langchain": "^0.3.19",
     "mongoose": "^8.10.1",
     "morgan": "~1.9.1",
-    "nodemon": "^3.1.9"
+    "node-cron": "^3.0.3",
+    "node-tesseract-ocr": "^2.2.1",
+    "nodemon": "^3.1.9",
+    "onesignal-node": "^3.4.0",
+    "tesseract.js": "^6.0.0"
   }
 }

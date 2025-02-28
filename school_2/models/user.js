@@ -15,6 +15,9 @@ const userSchema = new mongoose.Schema({
     minLength: 2, 
     maxLength: 100,
   },
+  age: {
+    type: Number
+  },
   phoneNumber: {
     type: String,
     required: [true, 'Phone Number is required'],
@@ -29,10 +32,31 @@ const userSchema = new mongoose.Schema({
     minLength: 2, 
     maxLength: 200,
   },
+  breakfast: {
+    type: String,
+  },
+  lunch: {
+    type: String,
+  },
+  dinner: {
+    type: String,
+  },
+  doseTaken: {
+    type: Boolean,
+    default: true
+  }, 
+  playerId:{
+    type: String,
+  },
   medicines: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Medicine',
   }],
+  prescriptions: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Prescription',
+  }],
+
 
 
   

@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { createMedicine, deleteMedicineById, getMedicine, updateMedicineById } from '../controllers/medicine.controller.js';
+import {  createMedicine, deleteMedicineById, getMedicine, getMedicinebyUser, updateMedicineById } from '../controllers/medicine.controller.js';
 
 const MedicineRouter = Router();
 
@@ -9,6 +9,7 @@ MedicineRouter.get('/getMedicine', getMedicine)
 
 MedicineRouter.put('/updateMedicine/:id', updateMedicineById)
 
+MedicineRouter.put('/getmedicinebyuser', getMedicinebyUser)
 
 MedicineRouter.delete('/deleteMedicine/:id', deleteMedicineById)
 

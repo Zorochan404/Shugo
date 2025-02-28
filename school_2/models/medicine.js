@@ -12,11 +12,8 @@ const medicineSchema = new mongoose.Schema({
   exp: {
     type: Date,
   },
-  entry: {
-    type: Date,
-  },
   category: {
-    type: String,
+    type: [String],
     required: [true, 'category is required'],
     trim: true,
   },
